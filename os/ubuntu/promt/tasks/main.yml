@@ -1,0 +1,6 @@
+- name: Modifed login promt...
+  script: files/promt.sh {{ user }}
+  register: result
+
+- debug:
+    msg: "result: {{ result }}"

@@ -1,0 +1,18 @@
+- hosts: servers
+  gather_facts: yes
+  become: yes
+  vars:
+    ansible_ssh_private_key_file: "{{ keys }}"
+  roles: 
+   - role: os/ubuntu/update
+     tags: updates
+   - role: os/ubuntu/sudo
+     tags: sudo
+   - role: os/ubuntu/promt
+     tags: promt
+   - role: os/ubuntu/soft
+     tags: soft
+   - role: os/ubuntu/docker
+     tags: docker
+   - role: os/ubuntu/nginx
+     tags: nginx

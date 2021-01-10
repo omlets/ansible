@@ -1,0 +1,6 @@
+- name: Modifed sudoers file...
+  script: files/sudo_check.sh {{ user }}
+  register: result
+
+- debug:
+    msg: "result: {{ result }}"

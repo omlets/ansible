@@ -1,0 +1,5 @@
+    - name: Update all packages
+      apt: update_cache=yes
+
+    - name: Upgrade all packages
+      apt: upgrade=dist force_apt_get=yes

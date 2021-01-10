@@ -1,0 +1,9 @@
+keys: /home/yakunin/keys/yakunin.key
+
+soft:
+- mc
+- htop
+- apt-transport-https
+- ca-certificates
+- curl
+- software-properties-common
